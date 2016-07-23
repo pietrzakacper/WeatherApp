@@ -15,29 +15,30 @@
         <div class="col-md-3"></div>
       <div class="col-md-6">
         <div class="jumbotron" id="main-container">
+          <strong><div class="btn btn-xs pull-right fahr" id="switch">&#x2109;</div></strong>
         <div class="text-center" id="head-weather-info">
           <h1 id="city">CITY</h1>
-          <small class="text-center" id="description">description</small>
+          <div class="text-center" id="description">description</div>
         </div>
         <div class="row" id="weather-info">
           <div class="col-sm-6 weather-col">
             <img src="" alt="" id="image">
           </div>
-          <div class="col-sm-6 text-center weather-col" id="temp">
-            Temperature
+          <div class="col-sm-6 text-center weather-col" id="temp-container">
+          <span id="temp"></span><span class="cels">&#x2103;</span>
           </div>
           </div>
 
         <div class="row well" id="weather-extra-info">
           <div class="col-sm-6 text-center weather-extra-col">
-            <div>Min temperature:&nbsp<span id="min-temp"></span>&#x2103</div>
-            <div>Max temperature:&nbsp<span id="max-temp"></span>&#x2103</div>
-            <div>Wind: &nbsp<span id="wind"></span>m/s</div>
+            <div>Min temperature:&nbsp;<span id="min-temp"></span><span class="cels">&#x2103;</span></div>
+            <div>Max temperature:&nbsp;<span id="max-temp"></span><span class="cels">&#x2103;</span></div>
+            <div>Wind: &nbsp;<span id="wind"></span>m/s</div>
           </div>
           <div class="col-sm-6 text-center weather-extra-col">
-            <div>Pressure: &nbsp<span id="pres"></span>hPa</div>
-            <div >Latitude: &nbsp <span id="lat"></span>&deg</div>
-            <div >Longitude: &nbsp <span id="lon"></span>&deg</div>
+            <div>Pressure: &nbsp;<span id="pres"></span>hPa</div>
+            <div >Latitude: &nbsp; <span id="lat"></span>&deg;</div>
+            <div >Longitude: &nbsp; <span id="lon"></span>&deg;</div>
           </div>
         </div>
         </div>

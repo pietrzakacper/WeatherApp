@@ -8,6 +8,21 @@ main
   margin-top: 50px;
 }
 
+h1{
+  font-size: 35px !important;
+}
+
+#switch{
+  text-align: right;
+  font-size: 30px;
+  background-color: white;
+  width: 45px;
+}
+#switch:hover{
+background-color: gray;
+width: 45px;
+}
+
 img#image{
   display: block;
   margin-left: auto;
@@ -16,11 +31,14 @@ img#image{
 }
 
 div#main-container{
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 50px;
+  padding: 15px !important;
 }
 
 #head-weather-info{
+  padding: 0px;
   margin-bottom: 30px;
 }
 
@@ -32,10 +50,11 @@ div.weather-col{
 div#weather-info{
 }
 div#weather-extra-info{
+  padding: 10px 0px 10px 0px !important;
   margin-top: 10px;
   color: gray;
 }
 
-div#temp{
+div#temp-container{
   padding-top: 20px;
 }
