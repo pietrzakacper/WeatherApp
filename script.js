@@ -21,7 +21,7 @@ function getWeather(latitude, longitude) {
             lon: longitude,
             units: "metric"
         },
-        url: 'https://api.openweathermap.org/data/2.5/weather',
+        url: 'http://api.openweathermap.org/data/2.5/weather',
         jsonpCallback: "setWeather",
         error: function() {
             console.log("Coś poszło nie tak przy losowaniu:(");
