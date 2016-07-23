@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Weather App</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="jumbotron" id="main-container">
+        <div class="text-center" id="head-weather-info">
+          <h1 id="city">CITY</h1>
+          <small class="text-center" id="description">description</small>
+        </div>
+        <div class="row" id="weather-info">
+          <div class="col-sm-6 block-center weather-col" id="image">
+
+          </div>
+          <div class="col-sm-6 text-center weather-col" id="temp">
+            Temperature
+          </div>
+          </div>
+
+        <div class="row well" id="weather-extra-info">
+          <div class="col-sm-6 text-center weather-extra-col">
+            <div id="min-temp">Min temperature:</div>
+            <div id="max-temp">Max temperature:</div>
+            <div id="wind">Wind: </div>
+          </div>
+          <div class="col-sm-6 text-center weather-extra-col">
+            <div id="pres">Pressure: </div>
+            <div id="lat">Latitude:</div>
+            <div id="lon">Longitude: </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+      </div>
+    </main>
     <script src="jQuery.js"></script>
     <script src="script.js"></script>
 </body>

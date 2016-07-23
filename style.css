@@ -1,0 +1,35 @@
+html body
+{
+  background-image: url("file:///home/kacper/Programowanie/Projekty/Web/WeatherApp/picture.jpg");
+  background-size: auto;
+  width: 100%;
+}
+
+main
+{
+  margin-top: 50px;
+}​
+
+div#main-container{
+  margin: 10px;
+}
+
+#head-weather-info{
+  margin-bottom: 30px;
+}
+
+div.weather-col{
+  font-size: 30px;
+}
+
+div#weather-info{
+}
+div#weather-extra-info{
+  margin-top: 30px;
+  color: gray;
+}
+
+div.container{
+  border: -1px solid black;
+  border-radius: 10px !important;
+}
