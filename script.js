@@ -2,13 +2,13 @@ function setWeather(obj){
   $("#city").html(obj.name+", "+obj.sys.country);
   $("#description").html(obj.weather[0]["description"]);
   $("#temp").html(obj.main.temp+"&#x2103");
-  $("#image").html('<img class="img img-responsive" src="http://openweathermap.org/img/w/'+obj.weather[0].icon+'.png">');
-  $("#min-temp").html("Min temperature: "+obj.main.temp_min+"&#x2103");
-  $("#max-temp").html("Max temperature: "+obj.main.temp_max+"&#x2103");
-  $("#wind").html("Wind speed: "+obj.wind.speed+"m/s");
-  $("#pres").html("Pressure: "+obj.main.pressure+"hPa");
-  $("#lat").html("Latitude: "+obj.coord.lat+"&deg");
-  $("#lon").html("Longitude: "+obj.coord.lon+"&deg");
+  $("#image").attr("src",'http://openweathermap.org/img/w/'+obj.weather[0].icon+'.png');
+  $("#min-temp").html(obj.main.temp_min);
+  $("#max-temp").html(obj.main.temp_max);
+  $("#wind").html(obj.wind.speed);
+  $("#pres").html(obj.main.pressure);
+  $("#lat").html(obj.coord.lat);
+  $("#lon").html(obj.coord.lon);
 
 }
 

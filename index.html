@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main class="container">
+  <main class="container">
       <div class="row">
         <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -20,8 +20,8 @@
           <small class="text-center" id="description">description</small>
         </div>
         <div class="row" id="weather-info">
-          <div class="col-sm-6 block-center weather-col" id="image">
-
+          <div class="col-sm-6 weather-col">
+            <img src="" alt="" id="image">
           </div>
           <div class="col-sm-6 text-center weather-col" id="temp">
             Temperature
@@ -30,14 +30,14 @@
 
         <div class="row well" id="weather-extra-info">
           <div class="col-sm-6 text-center weather-extra-col">
-            <div id="min-temp">Min temperature:</div>
-            <div id="max-temp">Max temperature:</div>
-            <div id="wind">Wind: </div>
+            <div>Min temperature:&nbsp<span id="min-temp"></span>&#x2103</div>
+            <div>Max temperature:&nbsp<span id="max-temp"></span>&#x2103</div>
+            <div>Wind: &nbsp<span id="wind"></span>m/s</div>
           </div>
           <div class="col-sm-6 text-center weather-extra-col">
-            <div id="pres">Pressure: </div>
-            <div id="lat">Latitude:</div>
-            <div id="lon">Longitude: </div>
+            <div>Pressure: &nbsp<span id="pres"></span>hPa</div>
+            <div >Latitude: &nbsp <span id="lat"></span>&deg</div>
+            <div >Longitude: &nbsp <span id="lon"></span>&deg</div>
           </div>
         </div>
         </div>
